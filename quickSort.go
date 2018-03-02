@@ -15,7 +15,7 @@ func partition(a []int, lo, hi int) int {
 	return lo
 }
 
-func quickSort(a []int, lo, hi int) {
+func quickSort (a []int, lo, hi int) {
 	if lo > hi {
 		return
 	}

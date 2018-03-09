@@ -1,8 +1,6 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 type TreeNode struct {
 	data   float64
@@ -419,24 +417,24 @@ func (rbt *RBTree) RightRotate(node *TreeNode) {
 		return
 	}
 
-	left_child := node.lchild
-	node.lchild = left_child.rchild
+	leftChild := node.lchild
+	node.lchild = leftChild.rchild
 	if node.lchild != nil {
 		node.lchild.parent = node
 	}
 
-	left_child.parent = node.parent
+	leftChild.parent = node.parent
 	if node.parent == nil {
-		rbt.root = left_child
+		rbt.root = leftChild
 	} else {
 		if node.parent.lchild == node {
-			node.parent.lchild = left_child
+			node.parent.lchild = leftChild
 		} else {
-			node.parent.rchild = left_child
+			node.parent.rchild = leftChild
 		}
 	}
-	left_child.rchild = node
-	node.parent = left_child
+	leftChild.rchild = node
+	node.parent = leftChild
 }
 
 func main() {

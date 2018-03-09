@@ -25,6 +25,7 @@ func main() {
 		{"d", "e", 6},
 		{"e", "f", 9},
 	}
+
 	directed := true
 	start := "a"
 	end := "e"
@@ -37,11 +38,14 @@ func main() {
 	} else {
 		fmt.Print("Undirected")
 	}
+
 	fmt.Printf(" graph with %d nodes, %d edges\n", len(allNodes), len(graph))
+
 	if startNode == nil {
 		fmt.Printf("start node %q not found in graph\n", start)
 		return
 	}
+
 	if findAll {
 		endNode = nil
 	} else if endNode == nil {

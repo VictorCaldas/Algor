@@ -1,6 +1,6 @@
 package main
 
-// thank you so much kio
+// thank you so much kio - https://github.com/KioCoan
 
 import (
 	"fmt"

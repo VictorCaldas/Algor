@@ -54,6 +54,7 @@ func main() {
 	}
 
 	// run Dijkstra's shortest path algorithm
+
 	paths := dijkstra(allNodes, startNode, endNode)
 	fmt.Println("Shortest path(s):")
 	for _, p := range paths {

@@ -1,10 +1,6 @@
 package main
-
 // thank you so much kio - https://github.com/KioCoan
-
-import (
-	"fmt"
-)
+import ("fmt")
 
 func main() {
 	r := 0

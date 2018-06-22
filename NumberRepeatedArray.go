@@ -4,13 +4,12 @@ import ("fmt")
 
 func main() {
 	r := 0
-	b := [10] int { 1, 1, 4, 10, 5, 7, 7, 4, 10 }
+	b := [9] int { 1, 1, 2, 5, 5, 7, 9, 7, 9}
 
 	for _, number := range b {
 		r = r ^ number
 	}
-
-	fmt.Println("Searching for number repeated in the array")
+	
 	fmt.Println(b)
 	fmt.Println("")
 	fmt.Print("Number that repeats in array: ")
